@@ -1,0 +1,14 @@
+Output:-
+1
+4
+2
+3
+
+Explanation:
+
+console.log(1);: This line will be executed first, and it will log 1 to the console.
+setTimeout(printNumber, 0, 2);: This line schedules the printNumber function to be executed with num equal to 2 after a minimum delay of 0 milliseconds.
+However, even with a delay of 0 milliseconds, the callback function won't be executed immediately. Instead, it will be put in the event queue.
+setTimeout(printNumber, 100, 3);: This line schedules the printNumber function to be executed with num equal to 3 after a delay of 100 milliseconds. 
+This callback is also placed in the event queue.
+console.log(4);: This line will be executed after console.log(1); and will log 4 to the console.
