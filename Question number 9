@@ -1,0 +1,19 @@
+The output will be:-
+array 1: length=5 last=j,o,n,e,s
+array 2: length=5 last=j,o,n,e,s
+
+Now, lets break the code in parts-
+
+step-1    var arr1 = "john".split('');
+          This line creates an array arr1 by splitting the string "john" into individual characters
+step-2    var arr2 = arr1.reverse();
+          This line reverses the array arr1 in place and assigns the reference to the reversed array to arr2. The reversed arr1 becomes ["n", "h", "o", "j"]. Now, both arr1 and arr2 point to the same reversed array.
+step-3    var arr3 = "jones".split('');
+          This line creates an array arr3 by splitting the string "jones" into individual characters, resulting in ["j", "o", "n", "e", "s"].
+step-4    arr2.push(arr3);
+          This line pushes the entire arr3 array as a single element to the end of arr2. After this operation, arr2 will be ["n", "h", "o", "j", ["j", "o", "n", "e", "s"]].
+step-5    console.log("array 1: length=" + arr1.length + " last=" + arr1.slice(-1));
+          This line logs the length of arr1 and the last element of arr1 to the console. The length of arr1 is 4, and arr1.slice(-1) will extract the last element of the array, which is "n".
+
+step-6    console.log("array 2: length=" + arr2.length + " last=" + arr2.slice(-1));
+          This line logs the length of arr2 and the last element of arr2 to the console. The length of arr2 is 5, and arr2.slice(-1) will extract the last element of the array, which is ["j", "o", "n", "e", "s"].
