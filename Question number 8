@@ -1,0 +1,27 @@
+The numbers 1, 4, 3, and 2 will be logged to the console in the following order:
+
+console.log(1);: This is a synchronous call, and it will log 1 to the console first.
+
+console.log(4);: Similarly, this is a synchronous call, and it will log 4 to the console after 1.
+
+setTimeout(function(){console.log(3)}, 0);: This is an asynchronous call using setTimeout. Even though the delay is specified as 0 milliseconds,
+it will not execute immediately. Instead, it will be added to the event queue.
+
+setTimeout(function(){console.log(2)}, 1000);: This is another asynchronous call using setTimeout, 
+and it has a delay of 1000 milliseconds (1 second). Like the previous setTimeout, it will be added to the event queue.
+
+
+
+let's understand the order in which the callbacks will be executed:
+
+The main thread has finished executing all synchronous code (console.log(1) and console.log(4)), and the event loop checks the event queue.
+The event loop finds the first setTimeout callback (with the delay of 0 milliseconds) in the event queue. It executes this callback, which logs 3 to the console.
+After executing the first setTimeout callback, the event loop checks the event queue again and finds the
+second setTimeout callback (with the delay of 1000 milliseconds). Since the required time (1 second) has not yet passed, the event loop waits for the specified time.
+After 1 second has passed, the event loop executes the second setTimeout callback, which logs 2 to the console.
+
+The final order of the console logs will be:-
+1
+4
+3
+2
