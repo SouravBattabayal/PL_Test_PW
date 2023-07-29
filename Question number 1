@@ -1,0 +1,26 @@
+Cookies:
+Cookies are small pieces of data stored in the user's web browser. They are typically used for maintaining stateful information across different requests and pages. 
+Cookies are sent with every HTTP request to the server, which makes them suitable for storing data that needs to be accessed both on the client-side and server-side.
+
+Key features of cookies:
+Size Limit: Cookies can typically store up to 4KB of data.
+Expiration: Cookies can have an expiration date, after which they will be automatically removed from the user's browser.
+Accessibility: Cookies can be accessed and modified by both the client-side (JavaScript) and server-side (through HTTP headers).
+
+Local Storage:
+localStorage is a mechanism that allows developers to store data in the user's browser with no expiration date unless explicitly removed by the user or the website.
+It is primarily used for persistent local storage of data that should be available across browser sessions.
+
+Key features of localStorage:
+Size Limit: localStorage can typically store up to 5-10 MB of data, depending on the browser.
+Expiration: Data stored in localStorage remains until explicitly cleared by the user or the website.
+Accessibility: localStorage can be accessed and modified only on the client-side (JavaScript). It is not sent to the server with each HTTP request.
+
+Sesson Storage:
+SessionStorage is similar to localStorage but has a crucial difference. While localStorage retains data until cleared by the user or the website, 
+sessionStorage keeps data only for the duration of a single browsing session. Once the user closes the browser tab or window, the data stored in sessionStorage is deleted.
+
+Key features of sessionStorage:
+Size Limit: sessionStorage has similar size limitations as localStorage (around 5-10 MB).
+Expiration: Data stored in sessionStorage persists only for the current session and is cleared when the session ends.
+Accessibility: sessionStorage can be accessed and modified only on the client-side (JavaScript) and is not sent to the server with each HTTP request.
