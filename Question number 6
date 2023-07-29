@@ -1,0 +1,3 @@
+Callback hell, also known as the pyramid of doom, is a situation that arises in asynchronous JavaScript programming when multiple nested callbacks are used one
+inside another. This nesting can make the code difficult to read, understand, and maintain. Callback hell typically occurs when dealing with complex asynchronous
+operations, such as multiple API calls or database queries.
