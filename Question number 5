@@ -1,0 +1,13 @@
+Higher-Order Components (HOCs) in React are a design pattern used for enhancing the functionality and reusability of components. A Higher-Order Component is a function
+that takes a component as input and returns a new component with additional props or behavior. HOCs are not a part of React's official API but are a widely used pattern
+in React development.
+
+HOCs allow you to abstract common logic or behavior from components and encapsulate it in a separate function. This makes it easier to share functionalities across 
+multiple components and promotes code reusability.
+
+Here's how Higher-Order Components work:
+
+ 1   Accepting a Component as Input
+ 2   Returning a New Component
+ 3   Props Proxy
+ 4   Composition
