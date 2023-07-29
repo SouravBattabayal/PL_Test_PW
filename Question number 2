@@ -1,0 +1,10 @@
+The output of the code is:-
+
+5
+5
+5
+5
+5
+
+The code snippet contains a for loop that iterates from i = 0 to i < 5. Inside the loop, there is a setTimeout function with a delay of 100 milliseconds. 
+The setTimeout function schedules the execution of the provided callback function (an arrow function in this case) after the specified delay.
