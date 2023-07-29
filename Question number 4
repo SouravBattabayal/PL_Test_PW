@@ -1,0 +1,7 @@
+Promise chaining is a technique in JavaScript that allows you to perform a sequence of asynchronous operations using Promises in a clean and readable manner. 
+Instead of nesting multiple levels of callbacks, promise chaining enables you to chain together multiple asynchronous tasks, making the code more maintainable and 
+easier to follow.
+
+In JavaScript, a Promise represents a value that might not be available yet but will be resolved or rejected at some point in the future.
+A Promise has two possible states: "fulfilled" (resolved with a value) or "rejected" (resolved with an error).
+
